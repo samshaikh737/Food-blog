@@ -1,236 +1,499 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
 </head>
-<body class="">
-<style>
-    .main-container{
-        display: flex;
-    }
-        .contain{
-            width: 70%;
-            height: 200vh;
-            background: #000;
-        }
-        .right,.with{
-            width: 30%;
-            height: auto;
-            background: red;
-        }
-        /* .with{ */
-            /* width: 30%; */
-        /* } */
-        .div{
-            width: auto;
-            background-color: yellow;
 
-        }
+<body>
+  <!-- navabr  -->
 
-        @media screen and (max-width: 600px) {
-            .right {
-                display: none;
-            }
-            .contain{
-                width: 100%;
-            }
-}
-
-</style>
-
-<div>
-    <nav class="navbar mb-1 navbar-expand-lg navbar-light bg-light sticky-top " >
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
+  <navbar-container>
+    <nav class="navbar navbar-expand-md navbar-light sticky-top"
+      style="background-color: #FFC017;padding:1rem 0;border-bottom: 2px solid;">
+      <div class="container">
+        <div class="iv navbar-brand" id="top-nav-logo"><a class="az ba bb bc bd be bf bg bh bi bj bk bl bm bn"
+            rel="noopener" href="/"><svg style="    width: 10rem;height: auto;" viewBox="0 0 3940 610" class="bo bp">
+              <path
+                d="M594.79 308.2c0 163.76-131.85 296.52-294.5 296.52S5.8 472 5.8 308.2 137.65 11.69 300.29 11.69s294.5 132.75 294.5 296.51M917.86 308.2c0 154.16-65.93 279.12-147.25 279.12s-147.25-125-147.25-279.12S689.29 29.08 770.61 29.08s147.25 125 147.25 279.12M1050 308.2c0 138.12-23.19 250.08-51.79 250.08s-51.79-112-51.79-250.08 23.19-250.08 51.8-250.08S1050 170.09 1050 308.2M1862.77 37.4l.82-.18v-6.35h-167.48l-155.51 365.5-155.51-365.5h-180.48v6.35l.81.18c30.57 6.9 46.09 17.19 46.09 54.3v434.45c0 37.11-15.58 47.4-46.15 54.3l-.81.18V587H1327v-6.35l-.81-.18c-30.57-6.9-46.09-17.19-46.09-54.3V116.9L1479.87 587h11.33l205.59-483.21V536.9c-2.62 29.31-18 38.36-45.68 44.61l-.82.19v6.3h213.3v-6.3l-.82-.19c-27.71-6.25-43.46-15.3-46.08-44.61l-.14-445.2h.14c0-37.11 15.52-47.4 46.08-54.3m97.43 287.8c3.49-78.06 31.52-134.4 78.56-135.37 14.51.24 26.68 5 36.14 14.16 20.1 19.51 29.55 60.28 28.09 121.21zm-2.11 22h250v-1.05c-.71-59.69-18-106.12-51.34-138-28.82-27.55-71.49-42.71-116.31-42.71h-1c-23.26 0-51.79 5.64-72.09 15.86-23.11 10.7-43.49 26.7-60.45 47.7-27.3 33.83-43.84 79.55-47.86 130.93-.13 1.54-.24 3.08-.35 4.62s-.18 2.92-.25 4.39a332.64 332.64 0 0 0-.36 21.69C1860.79 507 1923.65 600 2035.3 600c98 0 155.07-71.64 169.3-167.8l-7.19-2.53c-25 51.68-69.9 83-121 79.18-69.76-5.22-123.2-75.95-118.35-161.63m532.69 157.68c-8.2 19.45-25.31 30.15-48.24 30.15s-43.89-15.74-58.78-44.34c-16-30.7-24.42-74.1-24.42-125.51 0-107 33.28-176.21 84.79-176.21 21.57 0 38.55 10.7 46.65 29.37zm165.84 76.28c-30.57-7.23-46.09-18-46.09-57V5.28L2424.77 60v6.7l1.14-.09c25.62-2.07 43 1.47 53.09 10.79 7.9 7.3 11.75 18.5 11.75 34.26v71.14c-18.31-11.69-40.09-17.38-66.52-17.38-53.6 0-102.59 22.57-137.92 63.56-36.83 42.72-56.3 101.1-56.3 168.81C2230 518.72 2289.53 600 2378.13 600c51.83 0 93.53-28.4 112.62-76.3V588h166.65v-6.66zm159.29-505.33c0-37.76-28.47-66.24-66.24-66.24-37.59 0-67 29.1-67 66.24s29.44 66.24 67 66.24c37.77 0 66.24-28.48 66.24-66.24m43.84 505.33c-30.57-7.23-46.09-18-46.09-57h-.13V166.65l-166.66 47.85v6.5l1 .09c36.06 3.21 45.93 15.63 45.93 57.77V588h166.8v-6.66zm427.05 0c-30.57-7.23-46.09-18-46.09-57V166.65L3082 212.92v6.52l.94.1c29.48 3.1 38 16.23 38 58.56v226c-9.83 19.45-28.27 31-50.61 31.78-36.23 0-56.18-24.47-56.18-68.9V166.66l-166.66 47.85V221l1 .09c36.06 3.2 45.94 15.62 45.94 57.77v191.27a214.48 214.48 0 0 0 3.47 39.82l3 13.05c14.11 50.56 51.08 77 109 77 49.06 0 92.06-30.37 111-77.89v66h166.66v-6.66zM3934.2 588v-6.67l-.81-.19c-33.17-7.65-46.09-22.07-46.09-51.43v-243.2c0-75.83-42.59-121.09-113.93-121.09-52 0-95.85 30.05-112.73 76.86-13.41-49.6-52-76.86-109.06-76.86-50.12 0-89.4 26.45-106.25 71.13v-69.87l-166.66 45.89v6.54l1 .09c35.63 3.16 45.93 15.94 45.93 57V588h155.5v-6.66l-.82-.2c-26.46-6.22-35-17.56-35-46.66V255.72c7-16.35 21.11-35.72 49-35.72 34.64 0 52.2 24 52.2 71.28V588h155.54v-6.66l-.82-.2c-26.46-6.22-35-17.56-35-46.66v-248a160.45 160.45 0 0 0-2.2-27.68c7.42-17.77 22.34-38.8 51.37-38.8 35.13 0 52.2 23.31 52.2 71.28V588z">
+              </path>
+            </svg></a></div>
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav text-white text-center" style="margin-left: auto;">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Our Story</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">MemberShip</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="btn btn-dark" style="font-weight: 600;">Get started</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
+  </navbar-container>
 
+  <!-- header  -->
 
-<div class="main-container">
-    <div class="right with">
-<div class="container mx-auto text-center">
-    <div class="row">
-    <div class="col-sm-6">
+  <header>
+    <div class="bottom-container">
+      <div class="container-fluid" style="background-color: #FFC017;border-bottom: 2px solid;">
 
-    <div class="spinner-grow text-primary" role="status">
-        <span class="visually-hidden">Loading...</span>
+        <section class="pt-3 pb-2 container">
+          <div class="row header-row">
+            <div class="col-lg-6 col-md-8 mr-auto">
+              <h1 class="header-h1" style="font-size: 4rem;font-weight: 400;">How to make anything</h1>
+              <p class="mt-4 header-p" style="font-weight: 400;font-size: large;">Read and share ideas from independent
+                voices, world-class publications, and experts from around the globe. Everyone's welcome.
+                <strong><u>Learn more.</u></strong>
+              </p>
+              <p>
+                <a href="#" class="btn my-2 header-btn"
+                  style="border: 2px solid black;border: 2px solid black;padding: 0.5rem 2rem;">Get started</a>
+              </p>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
+  </header>
 
-    <div class="col-sm-6">
+  <!-- middel-container -->
 
-        <div class="spinner-grow text-primary" role="status">
-            <span class="visually-hidden">Loading...</span>
-          </div>
-        </div>    <div class="col-sm-6">
+  <middel-container>
 
-            <div class="spinner-grow text-primary" role="status">
-                <span class="visually-hidden">Loading...</span>
-              </div>
-            </div>    <div class="col-sm-6">
-
-                <div class="spinner-grow text-primary" role="status">
-                    <span class="visually-hidden">Loading...</span>
-                  </div>
-                </div></div>
-
-</div>
-    </div>
-
-
-<div class="contain">
     <div class="container">
-        <div class="div">
-            <h1>Hello world</h1>
+      <div class="row d-flex">
+        <div class="col-lg-8 col-md-12 col-sm-12">
+
+          <div class="container">
+            <div class="row mx-auto">
+
+              <!-- cursole  -->
+              <div class="col-sm-12 col-md-12 col-lg-12 mt-3 mb-3  title-section">
+
+                <div class="title text-center">
+                  <h1 class="text-dark">Top 3 Best <span class="text-warning">Food</span> </h1>
+
+                  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner" style="border-radius:1rem;">
+                      <div class="carousel-item active">
+                        <img src="./pizza.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h1 class="text-dark">How to Make <span class="text-warning">Pizza</span> </h1>
+                          <p>How to Make Pizza At Home</p>
+                          <button class="btn btn-warning">View</button>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./ice-crem.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h1>How to Make <span class="text-light">Ice Cream</span> </h1>
+                          <p>How to Make burger At Home</p>
+                          <button class="btn btn-light">View</button>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./burger.jfif" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h1>How to Make <span class="text-warning">Burgger</span> </h1>
+                          <p>How to Make burger At Home</p>
+                          <button class="btn btn-warning">View</button>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                      data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+
+
+
+                </div>
+
+              </div>
+
+              <!-- top 1 -->
+              <div class="col-sm-6 col-md-6 col-lg-6 mt-2">
+                <a href="#" class="text-decoration-none text-dark text-center">
+                  <div class="card" style="width: 18rem;">
+                    <img src="./pizza.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-text"><strong>How To make</strong><span class="text-warning"> Pizza </span> <br>
+                        At <strong>Home</strong> </h4>
+                      <button class="btn" style="background-color: #e66b0e;">Learn to make Ice Cream</button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <!-- top 2 -->
+              <div class="col-sm-6 col-md-6 col-lg-6 mt-2">
+                <a href="#" class="text-decoration-none text-dark text-center">
+                  <div class="card" style="width: 18rem;">
+                    <img src="./ice-crem.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-text"><strong>How To make</strong><span class="text-warning"> ice-crem </span>
+                        <br> At <strong>Home</strong>
+                      </h4>
+                      <button class="btn" style="background-color: #e66b0e;">Learn to make Ice Cream</button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <!-- post 1 -->
+              <div class="col-sm-12 col-md-12 col-lg-12 mt-3 mb-1">
+
+                <div
+                  class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+                  style="padding:1rem;">
+                  <div class="col-auto d-md-block d-sm-block d-lg-block mx-auto">
+                    <!-- <div class="img-container mt-3"> -->
+                    <img src="./ice-crem.jpg" width="400px" height="auto" class="img-fluid" alt="">
+                    <!-- </div> -->
+                  </div>
+
+                  <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-primary">World</strong>
+                    <h3 class="mb-0">How to to make <span style="color: pink;"> Ice Cream</span></h3>
+                    <div class="mb-1 text-muted">Nov 12</div>
+                    <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
+                      additional content.</p>
+                    <a href="#" class="stretched-link">Continue reading</a>
+                  </div>
+
+                </div>
+
+              </div>
+
+
+              <div class="col-sm-12 col-md-12 col-lg-12 mt-2 ">
+
+                <div
+                  class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+                  style="padding:1rem;">
+                  <div class="col-auto d-md-block d-sm-block d-lg-block mx-auto">
+                    <img src="./pizza.jpg" width="400px" height="auto" class="img-fluid" alt="">
+                  </div>
+                  <div class="col p-4 d-flex flex-column position-static">
+                    <h3 class="mb-0">How to to make <span class="text-warning"> Pizza</span></h3>
+                    <div class="mb-1 text-muted">Nov 12</div>
+                    <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
+                      additional content.</p>
+                    <a href="#" class="stretched-link">Continue reading</a>
+                  </div>
+
+                </div>
+
+              </div>
+
+
+              <div class="col-sm-12 col-md-12 col-lg-12 mt-2 ">
+
+                <div
+                  class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+                  style="padding:1rem;">
+                  <div class="col-auto d-md-block d-sm-block d-lg-block mx-auto">
+                    <!-- <div class="img-container mt-3"> -->
+                    <img src="./burger.jfif" width="400px" height="auto" class="img-fluid" alt="">
+                    <!-- </div> -->
+                  </div>
+
+                  <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-primary">World</strong>
+                    <h3 class="mb-0">Featured post</h3>
+                    <div class="mb-1 text-muted">Nov 12</div>
+                    <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
+                      additional content.</p>
+                    <a href="#" class="stretched-link">Continue reading</a>
+                  </div>
+
+                </div>
+
+              </div>
+
+
+            </div>
+
+          </div>
         </div>
-        <div class="container">
-            <h1>Hii how are you my name is sameer shaikh</h1>
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="div">
-                    <h1>Hello world</h1>
+
+        <div class="col-lg-4 col-md-12 col-sm-12">
+
+          <div class="container">
+            <div class="row mx-auto">
+
+              <div class="col-lg-12 col-md-12 col-sm-12 mt-2 ">
+                <div class="form-contain">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="text-center ">
+                      <button type="submit" class="btn btn-warning">Submit</button>
+                    </div>
+                  </form>
                 </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="div">
-                    <h1>Hello world</h1>
+              </div>
+
+
+
+              <div class="col-lg-12 mb-5 col-md-12 col-sm-12 mt-1 mb-2 mx-auto">
+
+                <div class="side-section">
+                  <div class="side-section-title">
+                    <h4>Social Media</h4>
+                  </div>
+                  <div class="line"></div>
+
+                  <div class="side-section-social-media">
+                    <div class="link-for-social-media">
+                      <a href="" class="link-social text-decoration-none">
+                        <div class="my-container instgram">
+                          <span class="title">
+                            <i class="fab fa-instagram"></i>
+                            400K
+                          </span>
+                          <span class="title-like">Like </span>
+                        </div>
+                      </a>
+
+                      <a href="" class="link-social text-decoration-none">
+                        <div class="my-container bg-danger">
+                          <span class="title">
+                            <i class="fab fa-youtube"></i>
+                            10M
+                          </span>
+                          <span class="title-like">Subscribe </span>
+                        </div>
+                      </a>
+
+
+                      <a href="" class="link-social text-decoration-none">
+                        <div class="my-container" style="background-color: #29c5f6;">
+                          <span class="title">
+                            <i class="fab fa-twitter"></i>
+                            200K
+                          </span>
+                          <span class="title-like">Follow </span>
+                        </div>
+                      </a>
+
+
+                    </div>
+                  </div>
                 </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="div">
-                    <h1>Hello world</h1>
+
+              </div>
+
+              <div class="col-lg-12 col-md-12 col-sm-12 mt-1 mb-2 mx-auto">
+
+                <div class="most-popular">
+                  <div class="side-section-title">
+                    <h4>Most Popular</h4>
+                  </div>
+                  <div class="line"></div>
                 </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="div">
-                    <h1>Hello world</h1>
+
+                <div class="post-container mt-3">
+
+                  <div class="posts">
+                    <a href="" class="text-decoration-none text-dark">
+                      <div class="post d-flex mb-2">
+                        <img src="./full_money_heist.jpg" width="100px" height="100px" alt="" class="img-fluid">
+                        <div class="post-detail " style="margin-left: 1rem;">
+                          <h6><strong> How to make money with web developement in 2021 </strong></h6>
+                          <span>March 25 2021</span>
+                        </div>
+
+                      </div>
+                    </a>
+
+                    <a href="" class="text-decoration-none text-dark">
+
+                      <div class="post d-flex mb-2">
+                        <img src="./ice-crem.jpg" width="100px" height="100px" alt="" class="img-fluid">
+                        <div class="post-detail " style="margin-left: 1rem;">
+                          <h6><strong> How to make money with web developement in 2021 </strong></h6>
+                          <span>March 25 2021</span>
+                        </div>
+
+                      </div>
+                    </a>
+
+                    <a href="" class="text-decoration-none text-dark">
+                      <div class="post d-flex mb-2">
+                        <img src="./full_money_heist.jpg" width="100px" height="100px" alt="" class="img-fluid">
+                        <div class="post-detail " style="margin-left: 1rem;">
+                          <h6><strong> How to make money with web developement in 2021 </strong></h6>
+                          <span>March 25 2021</span>
+                        </div>
+
+                      </div>
+                    </a>
+
+                    <a href="" class="text-decoration-none text-dark">
+
+                      <div class="post d-flex mb-2">
+                        <img src="./ice-crem.jpg" width="100px" height="100px" alt="" class="img-fluid">
+                        <div class="post-detail " style="margin-left: 1rem;">
+                          <h6><strong> How to make money with web developement in 2021 </strong></h6>
+                          <span>March 25 2021</span>
+                        </div>
+
+                      </div>
+                    </a>
+
+                    <a href="" class="text-decoration-none text-dark">
+                      <div class="post d-flex mb-2">
+                        <img src="./full_money_heist.jpg" width="100px" height="100px" alt="" class="img-fluid">
+                        <div class="post-detail " style="margin-left: 1rem;">
+                          <h6><strong> How to make money with web developement in 2021 </strong></h6>
+                          <span>March 25 2021</span>
+                        </div>
+
+                      </div>
+                    </a>
+
+                    <a href="" class="text-decoration-none text-dark">
+
+                      <div class="post d-flex mb-2">
+                        <img src="./ice-crem.jpg" width="100px" height="100px" alt="" class="img-fluid">
+                        <div class="post-detail " style="margin-left: 1rem;">
+                          <h6><strong> How to make money with web developement in 2021 </strong></h6>
+                          <span>March 25 2021</span>
+                        </div>
+
+                      </div>
+                    </a>
+
+
+
+                  </div>
+
                 </div>
+
+              </div>
+
+
+              <div class="col-lg-12 col-md-12 col-sm-12 mt-1 mb-2 mx-auto">
+
+              </div>
+
             </div>
-            <div class="col-sm-6">
-                <div class="div">
-                    <h1>Hello world</h1>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="div">
-                    <h1>Hello world</h1>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="div">
-                    <h1>Hello world</h1>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="div">
-                    <h1>Hello world</h1>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="div">
-                    <h1>Hello world</h1>
-                </div>
-            </div>
-                                                                        
+
+
+
+          </div>
+
+
         </div>
-        </div>
-        
+
+      </div>
+
     </div>
-</div>
-
-<div class="right">
-    <div class="container mx-auto">
-        <div class="row">
-            <div class="col-sm-6">
-        <div class="div">
-            <h1>Hello world</h1>
-        </div>
     </div>
+  </middel-container>
 
-    <div class="col-sm-6">
-        <div class="div">
-            <h1>Hello world</h1>
+
+  <!-- footer  -->
+
+  <footer class="pt-4 pt-md-5 border-top bg-warning">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-md">
+          <img class="mb-2" src="./b3.jpg" alt="" width="100px" height="100px">
+          <small class="d-block mb-3 text-muted">© 2017–2021</small>
         </div>
-    </div>
-
-    <div class="col-sm-6">
-        <div class="div">
-            <h1>Hello world</h1>
+        <div class="col-6 col-md">
+          <h5>Features</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
+          </ul>
         </div>
-    </div>
-    <div class="col-sm-6">
-        <div class="div">
-            <h1>Hello world</h1>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
+          </ul>
         </div>
-    </div>
-    <div class="col-sm-6">
-        <div class="div">
-            <h1>Hello world</h1>
+        <div class="col-6 col-md">
+          <h5>About</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+          </ul>
         </div>
+      </div>
     </div>
-    <div class="col-sm-6">
-        <div class="div">
-            <h1>Hello world</h1>
-        </div>
-    </div>
-    <div class="col-sm-6">
-        <div class="div">
-            <h1>Hello world</h1>
-        </div>
-    </div>
+  </footer>
+
+  <!-- javascript-section -->
+
+  <javascript-section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+      integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+      integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+      crossorigin="anonymous"></script>
+    <script>
 
 
-    </div></div>
-</div>
-</div>
-
-
-
-
-</div>
+    </script>
+  </javascript-section>
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
-<script>
-
-
-</script>
 </body>
+
 </html>
