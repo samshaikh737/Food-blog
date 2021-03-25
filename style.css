@@ -246,3 +246,7 @@ body {
     font-size: xx-large;
     text-align: center;
 }
+
+.top-rank .card .card-text:hover{
+    color: blue;
+}
