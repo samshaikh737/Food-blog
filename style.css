@@ -211,3 +211,38 @@ body {
 .post{
     font-family: inherit;
 }
+
+.home-map{
+    width: 23rem;
+    height: 20rem;
+}
+
+.categroy{
+    text-align: center;
+    background-color: rgba(120, 192, 168, 0.1);
+    padding: 0.5rem;
+}
+.categroy .title h3{
+    font-weight: 500;
+}
+
+.main-container {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    padding: 0.5rem;
+    color: white;
+    transition: 0.3s padding;
+    cursor: pointer;
+}
+
+
+
+.main-container:hover{
+    padding: 0.8rem;
+}
+
+.main-container h5{
+    font-size: xx-large;
+    text-align: center;
+}
